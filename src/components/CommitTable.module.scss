@@ -1,0 +1,79 @@
+/* CommitTable.module.scss */
+
+.commitTable {
+  display: flex;
+  flex-direction: row;
+  // align-items: center;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.monthContainer {
+  // border: 1px solid #ccc;
+  padding: 10px 20px;
+  margin: 10px;
+  // background-color: #f7f7f7;
+}
+
+.monthTitle {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #827e7e;
+}
+
+.weekDays {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  // background: #EDEDED;
+  color: #9c9393;
+  // border-bottom: 1px solid #ccc;
+}
+
+.weekDay {
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.daysContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  padding: 10px 0;
+}
+
+.day {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid #ccc;
+  background: #EDEDED;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+// .hasCommits {
+//   background-color: #7fc97f; /* Green background for cells with commits */
+// }
+
+.day:hover {
+  border-color: #000; /* Light gray background on hover */
+}
+
+
+.hasLessTen {
+  background: #ACD5F2;
+}
+.hasLessTwnt {
+  background: #7FA8C9;
+}
+.hasLessThrt {
+  background: #527BA0;
+}
+.hasMoreThrt {
+  background: #254E77;
+}
